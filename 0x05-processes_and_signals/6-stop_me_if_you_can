@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Bash script that stops another script from processing
+pkill -f beyond
