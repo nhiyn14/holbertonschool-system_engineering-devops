@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that displays To infinity and beyond indefinitely
 _sigterm() {
-	echo "I am invincible"
+	echo "I am invincible!!!"
 }
 trap _sigterm SIGTERM
 while :
