@@ -3,10 +3,10 @@
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo service ngix start
+sudo service nginx start
 sudo sh -c 'echo "Hello World" > /var/www/html/index.nginx-debian.html'
 sudo sed -i "/server_name _;/a\\\trewrite ^/redirect_me https://holbertonschool.com.au permanent;" /etc/nginx/sites-available/default
 sudo sh -c 'echo "Ceci n'\''est pas une page" > /var/www/html/custom_404.html'
 sudo sed -i "/server_name _;/a\\\terror_page 404 /custom_404.html;" /etc/nginx/sites-available/default
-sudo service ngix restart
+sudo service nginx restart
 
